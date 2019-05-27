@@ -81,7 +81,7 @@ static const std::string emptyString;
 #define TSC2_DUMP_TYPE_TREE
 
 
-#if defined(_MSC_VER) && (_MSC_VER > 1600 ) && (!defined WINCE)
+#if defined(_MSC_VER) && !(_MSC_VER > 1600 ) && (!defined WINCE)
 #define  SNPRINTF snprintf
 #elif defined _MSC_VER
 #define SNPRINTF	_snprintf
